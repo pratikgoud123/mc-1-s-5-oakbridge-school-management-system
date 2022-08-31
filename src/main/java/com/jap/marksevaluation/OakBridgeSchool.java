@@ -35,8 +35,8 @@ public class OakBridgeSchool {
     public static void main(String[] args) {
         OakBridgeSchool oakBridgeSchool = new OakBridgeSchool();
         // Declare and Initialize values to the arrays
-        String[] studentNames = null;
-        String[] studentSurnames = null;
+        String[] studentNames = {"Michelle", "Kate", "Ann", "Tina", "Tom", "Sam", "Ria", "Pam", "Kate", "Leo"};
+        String[] studentSurnames = {"Smith", "Johnson", "Williams", "Brown", "Jones", "Miller", "Davis", "Martin", "Clark", "King"};
         // Call the method to convert all the student names to upper case and display results
 
         // Call the method to sort names in alphabetical order and display results
