@@ -1,4 +1,7 @@
 package com.jap.marksevaluation;
+
+import java.util.Arrays;
+
 public class OakBridgeSchool {
 
     // Convert the given string name to upper case
@@ -56,8 +59,7 @@ public class OakBridgeSchool {
 
     // Display the names
     public void displayStudentNames(String[] namesArray){
-
-
+        System.out.println(Arrays.toString(namesArray));
     }
 
     public static void main(String[] args) {
