@@ -3,7 +3,10 @@ public class OakBridgeSchool {
 
     // Convert the given string name to upper case
     public String convertToUpperCase(String name){
-       return null;
+        if (name.equals("")) {
+            return " ";
+        }
+        return name.toUpperCase();
     }
 
     // Find the shortest word in the list of surnames
