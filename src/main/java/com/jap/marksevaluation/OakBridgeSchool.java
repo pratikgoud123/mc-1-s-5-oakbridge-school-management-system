@@ -47,9 +47,11 @@ public class OakBridgeSchool {
 
     // Concatenate the name and surname of the students
     public String[] concatenateNameAndSurname(String[] names, String [] surnames){
-        String []  concatenatedNames = null;
-
-        return  concatenatedNames;
+        String[] concatenatedNames = new String[names.length];
+        for (int i = 0; i < names.length; i++) {
+            concatenatedNames[i] = names[i].concat(" " + surnames[i]);
+        }
+        return concatenatedNames;
     }
 
     // Display the names
