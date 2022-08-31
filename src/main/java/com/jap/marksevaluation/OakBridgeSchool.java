@@ -12,7 +12,19 @@ public class OakBridgeSchool {
     // Find the shortest word in the list of surnames
     public String shortestSurname(String[] surnames)
     {
-        return " ";
+        int smallWord = 0;
+        for (int i = 0; i < surnames.length - 1; i++) {
+            for (int j = 0; j < surnames.length - 1; j++) {
+                if (surnames[j].length() < surnames[j + 1].length()) {
+                    smallWord = j;
+                } else if (surnames[j + 1].length() == surnames[smallWord].length()) {
+                    smallWord = j;
+                } else if (surnames[j + 1].length() < surnames[smallWord].length()) {
+                    smallWord = j + 1;
+                }
+            }
+        }
+        return surnames[smallWord];
     }
 
     // Check if any of the names in the array is repeated, if yes return true else false
