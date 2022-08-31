@@ -30,7 +30,18 @@ public class OakBridgeSchool {
     // Check if any of the names in the array is repeated, if yes return true else false
     public boolean checkIfNamesAreRepeated(String[] names){
         boolean flag = false;
-
+        for (int i = 0; i <= names.length - 1; i++) {
+            for (int j = i + 1; j <= names.length - 1; j++) {
+                if (names[i].equals(names[j])) {
+                    if (i == j) {
+                        flag = false;
+                        break;
+                    } else {
+                        flag = true;
+                    }
+                }
+            }
+        }
         return flag;
     }
 
